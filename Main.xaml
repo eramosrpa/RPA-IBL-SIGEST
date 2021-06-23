@@ -84,6 +84,11 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
   <Sequence sap:VirtualizedContainerService.HintSize="1967,16090" sap2010:WorkflowViewState.IdRef="Sequence_4">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="placa" />
@@ -285,13 +290,13 @@
                         </ui:ForEach.Body>
                       </ui:ForEach>
                     </Sequence>
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtInformacion]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1773,13802" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtInformacion]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="2585,19957" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="dato" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1739,13682" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="2551,19836" sap2010:WorkflowViewState.IdRef="Sequence_1">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:Double" Name="ncontrato" />
                               <Variable x:TypeArguments="x:String" Name="fechaIniCon" />
@@ -320,7 +325,7 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="No. de Contrato" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1697,188" sap2010:WorkflowViewState.IdRef="GetRowItem_22" Row="[dato]">
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="No. de Contrato" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="2509,188" sap2010:WorkflowViewState.IdRef="GetRowItem_22" Row="[dato]">
                               <ui:GetRowItem.Value>
                                 <OutArgument x:TypeArguments="x:Double">[ncontrato]</OutArgument>
                               </ui:GetRowItem.Value>
@@ -331,12 +336,12 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:GetRowItem>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Linea de Leasing" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1697,188" sap2010:WorkflowViewState.IdRef="GetRowItem_50" Row="[dato]">
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Linea de Leasing" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="2509,188" sap2010:WorkflowViewState.IdRef="GetRowItem_50" Row="[dato]">
                               <ui:GetRowItem.Value>
                                 <OutArgument x:TypeArguments="x:String">[lineaLeasing]</OutArgument>
                               </ui:GetRowItem.Value>
                             </ui:GetRowItem>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Ciudad" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1697,52" sap2010:WorkflowViewState.IdRef="GetRowItem_24" Row="[dato]">
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Ciudad" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="2509,188" sap2010:WorkflowViewState.IdRef="GetRowItem_24" Row="[dato]">
                               <ui:GetRowItem.Value>
                                 <OutArgument x:TypeArguments="x:String">[ciudad]</OutArgument>
                               </ui:GetRowItem.Value>
@@ -347,7 +352,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:GetRowItem>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Departamento" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1697,52" sap2010:WorkflowViewState.IdRef="GetRowItem_25" Row="[dato]">
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Departamento" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="2509,188" sap2010:WorkflowViewState.IdRef="GetRowItem_25" Row="[dato]">
                               <ui:GetRowItem.Value>
                                 <OutArgument x:TypeArguments="x:String">[departamento]</OutArgument>
                               </ui:GetRowItem.Value>
@@ -358,7 +363,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:GetRowItem>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Fecha inicio contrato" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1697,188" sap2010:WorkflowViewState.IdRef="GetRowItem_26" Row="[dato]">
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Fecha inicio contrato" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="2509,188" sap2010:WorkflowViewState.IdRef="GetRowItem_26" Row="[dato]">
                               <ui:GetRowItem.Value>
                                 <OutArgument x:TypeArguments="x:String">[fechaIniCon]</OutArgument>
                               </ui:GetRowItem.Value>
@@ -369,7 +374,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:GetRowItem>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Fecha fin contrato" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1697,52" sap2010:WorkflowViewState.IdRef="GetRowItem_27" Row="[dato]">
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Fecha fin contrato" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="2509,188" sap2010:WorkflowViewState.IdRef="GetRowItem_27" Row="[dato]">
                               <ui:GetRowItem.Value>
                                 <OutArgument x:TypeArguments="x:String">[fechaFinCon]</OutArgument>
                               </ui:GetRowItem.Value>
@@ -380,7 +385,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:GetRowItem>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Tipo documento propietario" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1697,52" sap2010:WorkflowViewState.IdRef="GetRowItem_28" Row="[dato]">
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Tipo documento propietario" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="2509,188" sap2010:WorkflowViewState.IdRef="GetRowItem_28" Row="[dato]">
                               <ui:GetRowItem.Value>
                                 <OutArgument x:TypeArguments="x:String">[tipoDocumento]</OutArgument>
                               </ui:GetRowItem.Value>
@@ -391,7 +396,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:GetRowItem>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="No. documento propietario" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1697,52" sap2010:WorkflowViewState.IdRef="GetRowItem_29" Row="[dato]">
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="No. documento propietario" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="2509,188" sap2010:WorkflowViewState.IdRef="GetRowItem_29" Row="[dato]">
                               <ui:GetRowItem.Value>
                                 <OutArgument x:TypeArguments="x:Double">[ndocumento]</OutArgument>
                               </ui:GetRowItem.Value>
@@ -402,7 +407,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:GetRowItem>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Primer nombre propietario" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1697,52" sap2010:WorkflowViewState.IdRef="GetRowItem_30" Row="[dato]">
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Primer nombre propietario" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="2509,188" sap2010:WorkflowViewState.IdRef="GetRowItem_30" Row="[dato]">
                               <ui:GetRowItem.Value>
                                 <OutArgument x:TypeArguments="x:String">[primerNombre]</OutArgument>
                               </ui:GetRowItem.Value>
@@ -413,7 +418,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:GetRowItem>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Primer apellido propietario" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1697,52" sap2010:WorkflowViewState.IdRef="GetRowItem_39" Row="[dato]">
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Primer apellido propietario" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="2509,188" sap2010:WorkflowViewState.IdRef="GetRowItem_39" Row="[dato]">
                               <ui:GetRowItem.Value>
                                 <OutArgument x:TypeArguments="x:String">[primerApellido]</OutArgument>
                               </ui:GetRowItem.Value>
@@ -424,7 +429,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:GetRowItem>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Tipo de Bien" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1697,52" sap2010:WorkflowViewState.IdRef="GetRowItem_32" Row="[dato]">
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Tipo de Bien" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="2509,188" sap2010:WorkflowViewState.IdRef="GetRowItem_32" Row="[dato]">
                               <ui:GetRowItem.Value>
                                 <OutArgument x:TypeArguments="x:String">[tipoBien]</OutArgument>
                               </ui:GetRowItem.Value>
@@ -435,7 +440,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:GetRowItem>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Placa" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1697,52" sap2010:WorkflowViewState.IdRef="GetRowItem_33" Row="[dato]">
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Placa" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="2509,188" sap2010:WorkflowViewState.IdRef="GetRowItem_33" Row="[dato]">
                               <ui:GetRowItem.Value>
                                 <OutArgument x:TypeArguments="x:String">[placa]</OutArgument>
                               </ui:GetRowItem.Value>
@@ -446,7 +451,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:GetRowItem>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Clase Vehiculo" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1697,52" sap2010:WorkflowViewState.IdRef="GetRowItem_34" Row="[dato]">
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Clase Vehiculo" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="2509,188" sap2010:WorkflowViewState.IdRef="GetRowItem_34" Row="[dato]">
                               <ui:GetRowItem.Value>
                                 <OutArgument x:TypeArguments="x:String">[claseVehiculo]</OutArgument>
                               </ui:GetRowItem.Value>
@@ -457,7 +462,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:GetRowItem>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Autoridad de Tránsito" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1697,52" sap2010:WorkflowViewState.IdRef="GetRowItem_35" Row="[dato]">
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Autoridad de Tránsito" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="2509,188" sap2010:WorkflowViewState.IdRef="GetRowItem_35" Row="[dato]">
                               <ui:GetRowItem.Value>
                                 <OutArgument x:TypeArguments="x:String">[autoridadTransito]</OutArgument>
                               </ui:GetRowItem.Value>
@@ -468,7 +473,43 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:GetRowItem>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Modelo" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1697,52" sap2010:WorkflowViewState.IdRef="GetRowItem_36" Row="[dato]">
+                            <If Condition="[autoridadTransito.Contains(&quot;BOGOTA&quot;)]" DisplayName="If BOGOTA Autoridad" sap:VirtualizedContainerService.HintSize="2509,432" sap2010:WorkflowViewState.IdRef="If_48">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If.Then>
+                                <Sequence sap:VirtualizedContainerService.HintSize="304,252" sap2010:WorkflowViewState.IdRef="Sequence_89">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="autoridadTransitoBogota" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_61">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[autoridadTransitoBogota]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">BOGOTA</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_62">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[autoridadTransito]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[autoridadTransitoBogota]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </Sequence>
+                              </If.Then>
+                            </If>
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Modelo" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="2509,188" sap2010:WorkflowViewState.IdRef="GetRowItem_36" Row="[dato]">
                               <ui:GetRowItem.Value>
                                 <OutArgument x:TypeArguments="x:String">[modelo]</OutArgument>
                               </ui:GetRowItem.Value>
@@ -490,7 +531,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:GetRowItem>
-                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Tipo de Servicio" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1697,188" sap2010:WorkflowViewState.IdRef="GetRowItem_38" Row="[dato]">
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Tipo de Servicio" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="2509,188" sap2010:WorkflowViewState.IdRef="GetRowItem_38" Row="[dato]">
                               <ui:GetRowItem.Value>
                                 <OutArgument x:TypeArguments="x:String">[tipoServicio]</OutArgument>
                               </ui:GetRowItem.Value>
@@ -501,7 +542,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:GetRowItem>
-                            <If Condition="[tipoServicio.Contains(&quot;Público&quot;)]" sap:VirtualizedContainerService.HintSize="1697,239" sap2010:WorkflowViewState.IdRef="If_45">
+                            <If Condition="[tipoServicio.Contains(&quot;Público&quot;)]" sap:VirtualizedContainerService.HintSize="2509,240" sap2010:WorkflowViewState.IdRef="If_45">
                               <If.Then>
                                 <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_56">
                                   <Assign.To>
@@ -513,7 +554,7 @@
                                 </Assign>
                               </If.Then>
                             </If>
-                            <Assign sap:VirtualizedContainerService.HintSize="1697,60" sap2010:WorkflowViewState.IdRef="Assign_15">
+                            <Assign sap:VirtualizedContainerService.HintSize="2509,60" sap2010:WorkflowViewState.IdRef="Assign_15">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[concatenarCiudad]</OutArgument>
                               </Assign.To>
@@ -521,7 +562,7 @@
                                 <InArgument x:TypeArguments="x:String">[ciudad + " " + "-"+" "+departamento]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="1697,60" sap2010:WorkflowViewState.IdRef="Assign_23">
+                            <Assign sap:VirtualizedContainerService.HintSize="2509,60" sap2010:WorkflowViewState.IdRef="Assign_23">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Int32">[contador]</OutArgument>
                               </Assign.To>
@@ -529,7 +570,7 @@
                                 <InArgument x:TypeArguments="x:Int32">[contador+1]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <If Condition="[string.IsNullOrEmpty(ncontrato.ToString) OR string.IsNullOrEmpty(fechaIniCon.ToString) OR string.IsNullOrEmpty(fechaFinCon) OR string.IsNullOrEmpty(tipoDocumento) OR string.IsNullOrEmpty(primerNombre) OR string.IsNullOrEmpty(placa) OR string.IsNullOrEmpty(claseVehiculo) OR string.IsNullOrEmpty(autoridadTransito) OR string.IsNullOrEmpty(modelo) OR string.IsNullOrEmpty(fechaMatricula) OR string.IsNullOrEmpty(tipoServicio) OR string.IsNullOrEmpty(lineaLeasing) OR string.IsNullOrEmpty(tipoBien) OR string.IsNullOrEmpty(departamento) OR string.IsNullOrEmpty(ciudad)]" DisplayName="If de agregar al log 1" sap:VirtualizedContainerService.HintSize="1697,1274" sap2010:WorkflowViewState.IdRef="If_9">
+                            <If Condition="[string.IsNullOrEmpty(ncontrato.ToString) OR string.IsNullOrEmpty(fechaIniCon.ToString) OR string.IsNullOrEmpty(fechaFinCon) OR string.IsNullOrEmpty(tipoDocumento) OR string.IsNullOrEmpty(primerNombre) OR string.IsNullOrEmpty(placa) OR string.IsNullOrEmpty(claseVehiculo) OR string.IsNullOrEmpty(autoridadTransito) OR string.IsNullOrEmpty(modelo) OR string.IsNullOrEmpty(fechaMatricula) OR string.IsNullOrEmpty(tipoServicio) OR string.IsNullOrEmpty(lineaLeasing) OR string.IsNullOrEmpty(tipoBien) OR string.IsNullOrEmpty(departamento) OR string.IsNullOrEmpty(ciudad)]" DisplayName="If de agregar al log 1" sap:VirtualizedContainerService.HintSize="2509,1275" sap2010:WorkflowViewState.IdRef="If_9">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -583,8 +624,8 @@
                                 </ui:Target>
                               </ui:Click.Target>
                             </ui:Click>
-                            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="1697,22" sap2010:WorkflowViewState.IdRef="Delay_68" />
-                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="1697,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="2509,22" sap2010:WorkflowViewState.IdRef="Delay_68" />
+                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="2509,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
                               <ui:Click.CursorPosition>
                                 <ui:CursorPosition Position="Center">
                                   <ui:CursorPosition.OffsetX>
@@ -606,7 +647,7 @@
                                 </ui:Target>
                               </ui:Click.Target>
                             </ui:Click>
-                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="1697,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="2509,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
                               <ui:Click.CursorPosition>
                                 <ui:CursorPosition Position="Center">
                                   <ui:CursorPosition.OffsetX>
@@ -628,7 +669,7 @@
                                 </ui:Target>
                               </ui:Click.Target>
                             </ui:Click>
-                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  #'" sap:VirtualizedContainerService.HintSize="1697,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  #'" sap:VirtualizedContainerService.HintSize="2509,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
                               <ui:Click.CursorPosition>
                                 <ui:CursorPosition Position="Center">
                                   <ui:CursorPosition.OffsetX>
@@ -650,7 +691,7 @@
                                 </ui:Target>
                               </ui:Click.Target>
                             </ui:Click>
-                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  http://127.0.0.1:800...'" sap:VirtualizedContainerService.HintSize="1697,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  http://127.0.0.1:800...'" sap:VirtualizedContainerService.HintSize="2509,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
                               <ui:Click.CursorPosition>
                                 <ui:CursorPosition Position="Center">
                                   <ui:CursorPosition.OffsetX>
@@ -672,8 +713,8 @@
                                 </ui:Target>
                               </ui:Click.Target>
                             </ui:Click>
-                            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="1697,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                            <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="1697,134" sap2010:WorkflowViewState.IdRef="SetValue_4" Text="[ncontrato.ToString]">
+                            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="2509,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                            <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="2509,134" sap2010:WorkflowViewState.IdRef="SetValue_4" Text="[ncontrato.ToString]">
                               <ui:SetValue.Target>
                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e4e35e8a-b9e2-43fc-9fe0-abf5aa4d3f32" InformativeScreenshot="805737d60161fe7e5a58822da325944b" Selector="&lt;webctrl tag='INPUT' type='number' /&gt;">
                                   <ui:Target.TimeoutMS>
@@ -685,7 +726,7 @@
                                 </ui:Target>
                               </ui:SetValue.Target>
                             </ui:SetValue>
-                            <ui:ImageFound DisplayName="Image Exists 'firefox.exe SIGEST'" Found="[contratoExiste]" sap:VirtualizedContainerService.HintSize="1697,106" sap2010:WorkflowViewState.IdRef="ImageFound_1">
+                            <ui:ImageFound DisplayName="Image Exists 'firefox.exe SIGEST'" Found="[contratoExiste]" sap:VirtualizedContainerService.HintSize="2509,106" sap2010:WorkflowViewState.IdRef="ImageFound_1">
                               <ui:ImageFound.Image>
                                 <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEkAAAAeCAYAAABg+DOTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOUSURBVGhD7ZnfS5NRGMcHgy4MFIxG1p3QHyBddRFGN11I0EVXXjgwkmGZGDICRfLCXcTqxoug2IUZDXWzLVeZlibzVyxroi4njkSHzd/MHDE3+HbO+57Zu3fb+75mQ9jeL5yL8zzvOe85n/c557znHA0OoWhkF8FInOXyR8ohxX6g0tANjcGNvhiz5YkUQ/JaXdDoCSSSSq3rzJofUgZpz4fL1TwgLlV/wJM95ssDKYAUx7DFSeB8xOONMJY2ZnCFgCqxBBFlT+S65CGFvCjjomgQ7TR69mZxiYumfphC/CO5LhlIv9FptrNh5oJxiZiWPChlw+6k2Y9t/sGcliSkqG8CJQyIRu/AVdt3PLMN4fSBzYkaX+7/EkhA2oGpuYfByASpG9pmLxZZiVxVRkjRKTeKBDDSDTc+vULlVG5HUwZI6zA2CkHQ1IOCWgd0tXZok+wkNXrgZSVzURkhPWghQO4oTC1f8xGSKqFUSAqkQlIgFZICqZAUSIWkQEeARP+lhtHJcrksSUid5m6cMIj/iwbQFqTe44AUhvX5NEZZ7p/kn0bdeJhllEkWUoWbZVJ0HJD+wzvdw4c+Wc0SpH2M2wdxjm5jSPQVG8fQtcXv76Jbi9DfJzbiK659jXLrMtY4DxHtwIt5mNpcOFvvQKHBiXL7KiKcM4AqUldBtQ2FXESPwpYo0+FDa1sfdK1ezCGOlW8elN/j383V4QxxB4RzzgHoDDZob/G+i85NWoN0m4iyAmnR2Y9T5nmssAuDyIIH1zqWsUsvE26/QcPCPu+I7cJidqDMucPnSYe1N98K/CEYjQ7op/ls2neyMsbA302298sCZhLHprEgaur7YeJ5pEaSXJuIZCElbWRpMvuZNxOkTTQZ2SmmWBOfuGPfJNGTzsQGmXaY1C88Ft5+PyjoVAZIojJi0ePn6xMsI4Yk1yaiLESSHxX69BFGb1xS5wNBPeIOUCXZ0kMSl1nzTOICGW4FgsuLg36InpdtE1EWIB0tko4OiQyfu0OwCBYwCiITpGOKpNQ5KRqYwo2Xq/hF54cG6TlJGhL9AO/Qyl1AxBGl9aeFNIKuxPgLk8g2CPpBoBS1B7jhGY2ReUyuTUSykFL/kxyo+ky9mSGlrm4jsKymrm7cyiNe3SQhkaHkHsEZQy+p14W6WWJIU2bNM4bz7N26lkk8eiqIJLIYNDX3opD6H87hJzFJtolIEpIqXiokWQF/AEQzac8aRGrkAAAAAElFTkSuQmCC" />
                               </ui:ImageFound.Image>
@@ -700,7 +741,7 @@
                                 </ui:Target>
                               </ui:ImageFound.Target>
                             </ui:ImageFound>
-                            <If Condition="[contratoExiste]" DisplayName="If contrato existe" sap:VirtualizedContainerService.HintSize="1697,8515" sap2010:WorkflowViewState.IdRef="If_4">
+                            <If Condition="[contratoExiste]" DisplayName="If contrato existe" sap:VirtualizedContainerService.HintSize="2509,12563" sap2010:WorkflowViewState.IdRef="If_4">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -708,7 +749,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <If.Then>
-                                <Sequence sap:VirtualizedContainerService.HintSize="539,4023" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                <Sequence sap:VirtualizedContainerService.HintSize="1166,8531" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="x:Boolean" Name="errorloc2" />
                                     <Variable x:TypeArguments="x:Boolean" Name="errorlog1" />
@@ -719,7 +760,7 @@
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="497,106" sap2010:WorkflowViewState.IdRef="Click_38" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="1124,106" sap2010:WorkflowViewState.IdRef="Click_38" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -741,7 +782,7 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="497,106" sap2010:WorkflowViewState.IdRef="Click_39" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="1124,106" sap2010:WorkflowViewState.IdRef="Click_39" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -763,7 +804,7 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="497,106" sap2010:WorkflowViewState.IdRef="Click_40" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="1124,106" sap2010:WorkflowViewState.IdRef="Click_40" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -785,7 +826,7 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  http://127.0.0.1:800...'" sap:VirtualizedContainerService.HintSize="497,106" sap2010:WorkflowViewState.IdRef="Click_41" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  http://127.0.0.1:800...'" sap:VirtualizedContainerService.HintSize="1124,106" sap2010:WorkflowViewState.IdRef="Click_41" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -807,8 +848,8 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
-                                  <Delay Duration="00:00:06" sap:VirtualizedContainerService.HintSize="497,22" sap2010:WorkflowViewState.IdRef="Delay_17" />
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A'" sap:VirtualizedContainerService.HintSize="497,106" sap2010:WorkflowViewState.IdRef="Click_64" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <Delay Duration="00:00:06" sap:VirtualizedContainerService.HintSize="1124,22" sap2010:WorkflowViewState.IdRef="Delay_17" />
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A'" sap:VirtualizedContainerService.HintSize="1124,106" sap2010:WorkflowViewState.IdRef="Click_64" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -830,7 +871,7 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
-                                  <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="497,134" sap2010:WorkflowViewState.IdRef="SetValue_40" Text="[ncontrato.ToString]">
+                                  <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="1124,134" sap2010:WorkflowViewState.IdRef="SetValue_40" Text="[ncontrato.ToString]">
                                     <ui:SetValue.Target>
                                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="16da11f4-d933-4a4b-929e-c1f1ede1aa4f" InformativeScreenshot="b0b6596a64e50032935f80294b084b27" Selector="&lt;webctrl tag='INPUT' type='number' /&gt;">
                                         <ui:Target.TimeoutMS>
@@ -842,7 +883,7 @@
                                       </ui:Target>
                                     </ui:SetValue.Target>
                                   </ui:SetValue>
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="497,106" sap2010:WorkflowViewState.IdRef="Click_44" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="1124,106" sap2010:WorkflowViewState.IdRef="Click_44" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -864,8 +905,8 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
-                                  <Delay Duration="00:00:06" sap:VirtualizedContainerService.HintSize="497,22" sap2010:WorkflowViewState.IdRef="Delay_21" />
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="497,106" sap2010:WorkflowViewState.IdRef="Click_45" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <Delay Duration="00:00:06" sap:VirtualizedContainerService.HintSize="1124,22" sap2010:WorkflowViewState.IdRef="Delay_21" />
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="1124,106" sap2010:WorkflowViewState.IdRef="Click_45" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -887,8 +928,8 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
-                                  <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="497,22" sap2010:WorkflowViewState.IdRef="Delay_22" />
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="497,106" sap2010:WorkflowViewState.IdRef="Click_65" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="1124,22" sap2010:WorkflowViewState.IdRef="Delay_22" />
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="1124,106" sap2010:WorkflowViewState.IdRef="Click_65" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -910,8 +951,8 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
-                                  <Delay Duration="00:00:06" sap:VirtualizedContainerService.HintSize="497,22" sap2010:WorkflowViewState.IdRef="Delay_38" />
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  focus'" sap:VirtualizedContainerService.HintSize="497,106" sap2010:WorkflowViewState.IdRef="Click_66" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <Delay Duration="00:00:06" sap:VirtualizedContainerService.HintSize="1124,22" sap2010:WorkflowViewState.IdRef="Delay_38" />
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  focus'" sap:VirtualizedContainerService.HintSize="1124,106" sap2010:WorkflowViewState.IdRef="Click_66" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -933,9 +974,9 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
-                                  <Switch x:TypeArguments="x:String" DisplayName="Switch Tipo locatario" Expression="[tipoDocumento]" sap:VirtualizedContainerService.HintSize="497,140" sap2010:WorkflowViewState.IdRef="Switch`1_6">
+                                  <Switch x:TypeArguments="x:String" DisplayName="Switch Tipo locatario" Expression="[tipoDocumento]" sap:VirtualizedContainerService.HintSize="1124,4647" sap2010:WorkflowViewState.IdRef="Switch`1_6">
                                     <Switch.Default>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="705,2213" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                      <Sequence sap:VirtualizedContainerService.HintSize="1084,2728" sap2010:WorkflowViewState.IdRef="Sequence_31">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="x:String" Name="segundoNombre">
                                             <Variable.Default>
@@ -957,7 +998,7 @@
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Segundo Nombre" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="663,52" sap2010:WorkflowViewState.IdRef="GetRowItem_44" Row="[dato]">
+                                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Segundo Nombre" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1042,188" sap2010:WorkflowViewState.IdRef="GetRowItem_44" Row="[dato]">
                                           <ui:GetRowItem.Value>
                                             <OutArgument x:TypeArguments="x:String">[segundoNombre]</OutArgument>
                                           </ui:GetRowItem.Value>
@@ -968,7 +1009,7 @@
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </ui:GetRowItem>
-                                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Segundo Apellido" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="663,52" sap2010:WorkflowViewState.IdRef="GetRowItem_45" Row="[dato]">
+                                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Segundo Apellido" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1042,188" sap2010:WorkflowViewState.IdRef="GetRowItem_45" Row="[dato]">
                                           <ui:GetRowItem.Value>
                                             <OutArgument x:TypeArguments="x:String">[segundoApellido]</OutArgument>
                                           </ui:GetRowItem.Value>
@@ -979,7 +1020,7 @@
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </ui:GetRowItem>
-                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  focus'" sap:VirtualizedContainerService.HintSize="663,134" sap2010:WorkflowViewState.IdRef="TypeInto_39" Text="[tipoDocumento+ &quot;[k(up)][k(enter)]&quot;]">
+                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  focus'" sap:VirtualizedContainerService.HintSize="1042,134" sap2010:WorkflowViewState.IdRef="TypeInto_39" Text="[tipoDocumento+ &quot;[k(up)][k(enter)]&quot;]">
                                           <ui:TypeInto.Target>
                                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="38257db5-fb3d-4f4c-90f4-cefb4b1d22ac" InformativeScreenshot="34c42bcec4fd597a15160fd0e0743e94" Selector="&lt;webctrl id='focus' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
@@ -991,7 +1032,7 @@
                                             </ui:Target>
                                           </ui:TypeInto.Target>
                                         </ui:TypeInto>
-                                        <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="663,134" sap2010:WorkflowViewState.IdRef="SetValue_50" Text="[ndocumento.ToString]">
+                                        <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="1042,134" sap2010:WorkflowViewState.IdRef="SetValue_50" Text="[ndocumento.ToString]">
                                           <ui:SetValue.Target>
                                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="59b7c335-6d9a-489d-a821-e11c9ec515a6" InformativeScreenshot="9122796257af73923ea5b419a7d716b2" Selector="&lt;webctrl name='numero_documento1' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
@@ -1003,7 +1044,7 @@
                                             </ui:Target>
                                           </ui:SetValue.Target>
                                         </ui:SetValue>
-                                        <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="663,134" sap2010:WorkflowViewState.IdRef="SetValue_51" Text="[ndocumento.ToString]">
+                                        <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="1042,134" sap2010:WorkflowViewState.IdRef="SetValue_51" Text="[ndocumento.ToString]">
                                           <ui:SetValue.Target>
                                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e9794f05-446f-4c2e-bbfb-abd368a18bf7" InformativeScreenshot="326324c4f5c4da09236891e3517004ba" Selector="&lt;webctrl name='numero_documento_copia1' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
@@ -1015,8 +1056,8 @@
                                             </ui:Target>
                                           </ui:SetValue.Target>
                                         </ui:SetValue>
-                                        <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="663,22" sap2010:WorkflowViewState.IdRef="Delay_41" />
-                                        <ui:ImageFound DisplayName="Image Exists 'firefox.exe SIGEST'" Found="[locatarioYaEsta]" sap:VirtualizedContainerService.HintSize="663,106" sap2010:WorkflowViewState.IdRef="ImageFound_9">
+                                        <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="1042,22" sap2010:WorkflowViewState.IdRef="Delay_41" />
+                                        <ui:ImageFound DisplayName="Image Exists 'firefox.exe SIGEST'" Found="[locatarioYaEsta]" sap:VirtualizedContainerService.HintSize="1042,106" sap2010:WorkflowViewState.IdRef="ImageFound_9">
                                           <ui:ImageFound.Image>
                                             <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAARCAYAAAAxMemoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOKSURBVFhH7Zf5S1RRFMf726KQoLIstURtoZSixaAIK9qoLCKyqIgWCtKwzSWdYqox11xyoSwlRFwrU7JyGDItTvM9887rzu2+N/ODyMzoBx7z7n13/X7vPffOIlogplkwKMaxDarKzLDeYpf2ixeo+26xlYpvPr9upe7iIivlzJwZFBgdTRhxowULykSfp4qaC07Rn5kZK8eZOTNooreXavP3W6n5wWxoajQIzsLhstXJ/PjydtHPiQnrK9H4uy56nJ5K5WtS+PtgtY/zv/X10ZNNGzm/dOVybgMM1bzkcg+WJfG35oKTnP+xqYkqM9bZ5d8X3eF80O/1UtuFQu77+Y7tnNd59QrnC123b3G7qO/JzqLJoUHryz+ebtlM/pERKxWirfA8DdfVuvavg75VPWT1Q5dn23LDvs0EAtzm/aSl/IsHOOnjhtGgVyeOU8flS1YqtCW9OVv5HZMtS1lFgbExTv+emqK6A/k0HRzUl84OOx/4du+kkcYGfjftoOH6Oq4PMOGKtFQOhQBGwNCvPT2cBqpBEBPtiVBYNBiXHjY+PHrIRqp4NmTxr1v/Kuir5cxpKxXSo/7QQX5vPXeW+xBggqDvIDd9nDAahIHqoDGI/Ob6tbABuYFyKA+iCXGY7KDvBb/DCL28ahBE/uWf5HcB9dUdBlCmcn26lQqaEtw52EEm1P5V0JduPPRA22jr7c0bVm44kUKcqo8T/xkEIU0NizgQTRdBwGrHFsbKv7dkMT+oB4w7KCgWQgxCgZSXtvErdQXVIJTVMdUBjceO8uoF1Xvy7JDn1r+KfNMfzAnGIVQhbGHu2F2CrqObPk7M6g5CGFRDkiqYyaCKtLVhZ5tqgEls9Xu0OwjAHJiE8jBIcOtfxbSDTEz7/eTNzaFPLc2c1g1y08cJo0GYaLRnEAbecOQwH4wo82NgwM7HxGQA3/v7+cAGMlkIJGcAhCpNXmELZBq8KiAWCQyXtpzOIAFhDnPqrSi3ctz7V9H7Qh3ZKfg/I22Amn177XMF85fdirpu+jhhNAiV5RaH20akW5wMFqtD8hE6EJvVAcBItOfJzuQ0QgzqozxuQjiIozUIyC0Oj9MtTkBZGKAa6Na/Tk9JiV0Wc4MGAHNXtVBvZmgL88W30fb2iPqYsA1KdLCqcTuNNxLeINn5CD3jXaFVH08ktEE49xBSEHoiXWdjlXkT4uKVBYNiGqK/GSftFiIdOtEAAAAASUVORK5CYII=" />
                                           </ui:ImageFound.Image>
@@ -1031,7 +1072,7 @@
                                             </ui:Target>
                                           </ui:ImageFound.Target>
                                         </ui:ImageFound>
-                                        <If Condition="[locatarioYaEsta]" sap:VirtualizedContainerService.HintSize="663,1207" sap2010:WorkflowViewState.IdRef="If_20">
+                                        <If Condition="[locatarioYaEsta]" sap:VirtualizedContainerService.HintSize="1042,1450" sap2010:WorkflowViewState.IdRef="If_20">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1049,14 +1090,14 @@
                                             </Sequence>
                                           </If.Then>
                                           <If.Else>
-                                            <Sequence sap:VirtualizedContainerService.HintSize="376,1048" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                            <Sequence sap:VirtualizedContainerService.HintSize="755,1290" sap2010:WorkflowViewState.IdRef="Sequence_33">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_43" />
-                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_46" Text="[primerNombre]">
+                                              <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="713,22" sap2010:WorkflowViewState.IdRef="Delay_43" />
+                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="713,134" sap2010:WorkflowViewState.IdRef="TypeInto_46" Text="[primerNombre]">
                                                 <ui:TypeInto.Target>
                                                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="81f04a2d-9f8d-44d4-86ed-c10714c6f8ef" InformativeScreenshot="2cab160f54b6340abaa6768ed99ea7f2" Selector="&lt;webctrl name='primer_nombre1' tag='INPUT' type='text' /&gt;">
                                                     <ui:Target.TimeoutMS>
@@ -1068,7 +1109,7 @@
                                                   </ui:Target>
                                                 </ui:TypeInto.Target>
                                               </ui:TypeInto>
-                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_47" Text="[segundoNombre]">
+                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="713,134" sap2010:WorkflowViewState.IdRef="TypeInto_47" Text="[segundoNombre]">
                                                 <ui:TypeInto.Target>
                                                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="04b54d6b-6aa6-452f-b767-5d2d08d2bb73" InformativeScreenshot="643727de24f0539dea4f0aacde03a5f4" Selector="&lt;webctrl name='segundo_nombre1' tag='INPUT' type='text' /&gt;">
                                                     <ui:Target.TimeoutMS>
@@ -1080,7 +1121,7 @@
                                                   </ui:Target>
                                                 </ui:TypeInto.Target>
                                               </ui:TypeInto>
-                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_48" Text="[primerApellido]">
+                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="713,134" sap2010:WorkflowViewState.IdRef="TypeInto_48" Text="[primerApellido]">
                                                 <ui:TypeInto.Target>
                                                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ca05c983-ed33-4424-b840-6426569a1929" InformativeScreenshot="6a55fd890f2298ecb1211e4ebcc72802" Selector="&lt;webctrl name='primer_apellido1' tag='INPUT' type='text' /&gt;">
                                                     <ui:Target.TimeoutMS>
@@ -1092,7 +1133,7 @@
                                                   </ui:Target>
                                                 </ui:TypeInto.Target>
                                               </ui:TypeInto>
-                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_49" Text="[segundoApellido]">
+                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="713,134" sap2010:WorkflowViewState.IdRef="TypeInto_49" Text="[segundoApellido]">
                                                 <ui:TypeInto.Target>
                                                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a7fd50ff-e3d5-441c-ab32-283c1dbf1425" InformativeScreenshot="68f7782e65039c134a25dfb15328dfcf" Selector="&lt;webctrl name='segundo_apellido1' tag='INPUT' type='text' /&gt;">
                                                     <ui:Target.TimeoutMS>
@@ -1104,7 +1145,7 @@
                                                   </ui:Target>
                                                 </ui:TypeInto.Target>
                                               </ui:TypeInto>
-                                              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_71" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="713,106" sap2010:WorkflowViewState.IdRef="Click_71" KeyModifiers="None" MouseButton="BTN_LEFT">
                                                 <ui:Click.CursorPosition>
                                                   <ui:CursorPosition Position="Center">
                                                     <ui:CursorPosition.OffsetX>
@@ -1126,7 +1167,7 @@
                                                   </ui:Target>
                                                 </ui:Click.Target>
                                               </ui:Click>
-                                              <If Condition="[ciudad.Equals(&quot;Bogota D.C.&quot;)]" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="If_23">
+                                              <If Condition="[ciudad.Equals(&quot;Bogota D.C.&quot;)]" sap:VirtualizedContainerService.HintSize="713,294" sap2010:WorkflowViewState.IdRef="If_23">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1173,7 +1214,7 @@
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <Sequence x:Key="NIT" sap:VirtualizedContainerService.HintSize="705,1445" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                    <Sequence x:Key="NIT" sap:VirtualizedContainerService.HintSize="1084,1688" sap2010:WorkflowViewState.IdRef="Sequence_30">
                                       <Sequence.Variables>
                                         <Variable x:TypeArguments="x:Boolean" Name="locatarioYaEstanit" />
                                       </Sequence.Variables>
@@ -1183,7 +1224,7 @@
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  focus'" sap:VirtualizedContainerService.HintSize="663,134" sap2010:WorkflowViewState.IdRef="TypeInto_36" Text="[tipoDocumento+ &quot;[k(down)][k(enter)]&quot;]">
+                                      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  focus'" sap:VirtualizedContainerService.HintSize="1042,134" sap2010:WorkflowViewState.IdRef="TypeInto_36" Text="[tipoDocumento+ &quot;[k(down)][k(enter)]&quot;]">
                                         <ui:TypeInto.Target>
                                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="68877963-24c9-4d7b-a2f4-4c4deb837b36" InformativeScreenshot="2baafc291846029bc7423750809a05ab" Selector="&lt;webctrl id='focus' tag='INPUT' type='text' /&gt;">
                                             <ui:Target.TimeoutMS>
@@ -1195,7 +1236,7 @@
                                           </ui:Target>
                                         </ui:TypeInto.Target>
                                       </ui:TypeInto>
-                                      <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="663,134" sap2010:WorkflowViewState.IdRef="SetValue_47" Text="[ndocumento.ToString]">
+                                      <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="1042,134" sap2010:WorkflowViewState.IdRef="SetValue_47" Text="[ndocumento.ToString]">
                                         <ui:SetValue.Target>
                                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="60dc1c12-1560-4fb3-aeea-7d771d2ab30a" InformativeScreenshot="b969b99270c4502d10c7cd5b6b6c272f" Selector="&lt;webctrl name='numero_documento1' tag='INPUT' type='text' /&gt;">
                                             <ui:Target.TimeoutMS>
@@ -1207,7 +1248,7 @@
                                           </ui:Target>
                                         </ui:SetValue.Target>
                                       </ui:SetValue>
-                                      <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="663,134" sap2010:WorkflowViewState.IdRef="SetValue_48" Text="[ndocumento.ToString]">
+                                      <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="1042,134" sap2010:WorkflowViewState.IdRef="SetValue_48" Text="[ndocumento.ToString]">
                                         <ui:SetValue.Target>
                                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="54af3f42-32da-4a7c-92e7-ecccc42aed0e" InformativeScreenshot="c312123cd7514d1e84bf43c82bcee1a2" Selector="&lt;webctrl name='numero_documento_copia1' tag='INPUT' type='text' /&gt;">
                                             <ui:Target.TimeoutMS>
@@ -1219,8 +1260,8 @@
                                           </ui:Target>
                                         </ui:SetValue.Target>
                                       </ui:SetValue>
-                                      <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="663,22" sap2010:WorkflowViewState.IdRef="Delay_48" />
-                                      <ui:ImageFound DisplayName="Image Exists 'firefox.exe SIGEST'" Found="[locatarioYaEstanit]" sap:VirtualizedContainerService.HintSize="663,106" sap2010:WorkflowViewState.IdRef="ImageFound_10">
+                                      <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="1042,22" sap2010:WorkflowViewState.IdRef="Delay_48" />
+                                      <ui:ImageFound DisplayName="Image Exists 'firefox.exe SIGEST'" Found="[locatarioYaEstanit]" sap:VirtualizedContainerService.HintSize="1042,106" sap2010:WorkflowViewState.IdRef="ImageFound_10">
                                         <ui:ImageFound.Image>
                                           <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAARCAYAAAAxMemoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOKSURBVFhH7Zf5S1RRFMf726KQoLIstURtoZSixaAIK9qoLCKyqIgWCtKwzSWdYqox11xyoSwlRFwrU7JyGDItTvM9887rzu2+N/ODyMzoBx7z7n13/X7vPffOIlogplkwKMaxDarKzLDeYpf2ixeo+26xlYpvPr9upe7iIivlzJwZFBgdTRhxowULykSfp4qaC07Rn5kZK8eZOTNooreXavP3W6n5wWxoajQIzsLhstXJ/PjydtHPiQnrK9H4uy56nJ5K5WtS+PtgtY/zv/X10ZNNGzm/dOVybgMM1bzkcg+WJfG35oKTnP+xqYkqM9bZ5d8X3eF80O/1UtuFQu77+Y7tnNd59QrnC123b3G7qO/JzqLJoUHryz+ebtlM/pERKxWirfA8DdfVuvavg75VPWT1Q5dn23LDvs0EAtzm/aSl/IsHOOnjhtGgVyeOU8flS1YqtCW9OVv5HZMtS1lFgbExTv+emqK6A/k0HRzUl84OOx/4du+kkcYGfjftoOH6Oq4PMOGKtFQOhQBGwNCvPT2cBqpBEBPtiVBYNBiXHjY+PHrIRqp4NmTxr1v/Kuir5cxpKxXSo/7QQX5vPXeW+xBggqDvIDd9nDAahIHqoDGI/Ob6tbABuYFyKA+iCXGY7KDvBb/DCL28ahBE/uWf5HcB9dUdBlCmcn26lQqaEtw52EEm1P5V0JduPPRA22jr7c0bVm44kUKcqo8T/xkEIU0NizgQTRdBwGrHFsbKv7dkMT+oB4w7KCgWQgxCgZSXtvErdQXVIJTVMdUBjceO8uoF1Xvy7JDn1r+KfNMfzAnGIVQhbGHu2F2CrqObPk7M6g5CGFRDkiqYyaCKtLVhZ5tqgEls9Xu0OwjAHJiE8jBIcOtfxbSDTEz7/eTNzaFPLc2c1g1y08cJo0GYaLRnEAbecOQwH4wo82NgwM7HxGQA3/v7+cAGMlkIJGcAhCpNXmELZBq8KiAWCQyXtpzOIAFhDnPqrSi3ctz7V9H7Qh3ZKfg/I22Amn177XMF85fdirpu+jhhNAiV5RaH20akW5wMFqtD8hE6EJvVAcBItOfJzuQ0QgzqozxuQjiIozUIyC0Oj9MtTkBZGKAa6Na/Tk9JiV0Wc4MGAHNXtVBvZmgL88W30fb2iPqYsA1KdLCqcTuNNxLeINn5CD3jXaFVH08ktEE49xBSEHoiXWdjlXkT4uKVBYNiGqK/GSftFiIdOtEAAAAASUVORK5CYII=" />
                                         </ui:ImageFound.Image>
@@ -1235,7 +1276,7 @@
                                           </ui:Target>
                                         </ui:ImageFound.Target>
                                       </ui:ImageFound>
-                                      <If Condition="[locatarioYaEstanit]" sap:VirtualizedContainerService.HintSize="663,623" sap2010:WorkflowViewState.IdRef="If_22">
+                                      <If Condition="[locatarioYaEstanit]" sap:VirtualizedContainerService.HintSize="1042,866" sap2010:WorkflowViewState.IdRef="If_22">
                                         <If.Then>
                                           <Sequence sap:VirtualizedContainerService.HintSize="242,114" sap2010:WorkflowViewState.IdRef="Sequence_34">
                                             <sap:WorkflowViewStateService.ViewState>
@@ -1247,13 +1288,13 @@
                                           </Sequence>
                                         </If.Then>
                                         <If.Else>
-                                          <Sequence sap:VirtualizedContainerService.HintSize="376,464" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                          <Sequence sap:VirtualizedContainerService.HintSize="755,706" sap2010:WorkflowViewState.IdRef="Sequence_35">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SetValue_52" Text="[primerNombre]">
+                                            <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="713,134" sap2010:WorkflowViewState.IdRef="SetValue_52" Text="[primerNombre]">
                                               <ui:SetValue.Target>
                                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6efe15ce-f15a-4e3c-bf78-7f9a3ce04f56" InformativeScreenshot="45e99677f90c1efcc025ab93cc9eefd6" Selector="&lt;webctrl name='primer_nombre1' tag='INPUT' type='text' /&gt;">
                                                   <ui:Target.TimeoutMS>
@@ -1265,7 +1306,7 @@
                                                 </ui:Target>
                                               </ui:SetValue.Target>
                                             </ui:SetValue>
-                                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_73" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="713,106" sap2010:WorkflowViewState.IdRef="Click_73" KeyModifiers="None" MouseButton="BTN_LEFT">
                                               <ui:Click.CursorPosition>
                                                 <ui:CursorPosition Position="Center">
                                                   <ui:CursorPosition.OffsetX>
@@ -1287,7 +1328,7 @@
                                                 </ui:Target>
                                               </ui:Click.Target>
                                             </ui:Click>
-                                            <If Condition="[ciudad.Equals(&quot;Bogota D.C.&quot;)]" DisplayName="If bogota" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="If_24">
+                                            <If Condition="[ciudad.Equals(&quot;Bogota D.C.&quot;)]" DisplayName="If bogota" sap:VirtualizedContainerService.HintSize="713,294" sap2010:WorkflowViewState.IdRef="If_24">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1328,7 +1369,7 @@
                                       </If>
                                     </Sequence>
                                   </Switch>
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="497,106" sap2010:WorkflowViewState.IdRef="Click_69" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="1124,106" sap2010:WorkflowViewState.IdRef="Click_69" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -1350,7 +1391,7 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
-                                  <ui:ImageFound DisplayName="Image Exists 'firefox.exe SIGEST'" Found="[errorlog1]" sap:VirtualizedContainerService.HintSize="497,106" sap2010:WorkflowViewState.IdRef="ImageFound_18">
+                                  <ui:ImageFound DisplayName="Image Exists 'firefox.exe SIGEST'" Found="[errorlog1]" sap:VirtualizedContainerService.HintSize="1124,106" sap2010:WorkflowViewState.IdRef="ImageFound_18">
                                     <ui:ImageFound.Image>
                                       <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAATEAAACzCAYAAADhaisPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA62SURBVHhe7d1NrxzFGcXxfKTk47DKF4hYsQEWCCWWYI0l5B0IRQrygoVRNmwwioSI2LDBCzAWICyERCS4fuHia3c4w5zRc4ununvm9vi6uv4/qRSmprrrpbtPZsY9c/80AEDDCDEATSPEADSNEAPQNEIMQNMIMQBNI8QANI0QA9A0QgxA0wgxAE0jxAA0jRAD0DRCDEDTCDEATSPEADSNEAPQNEIMQNMIMQBNI8QANI0QA9A0QgyLOvv66+H0o4+Gh+++O9x/443h5B//GE5eemn4+YUXNkX/rTo9pzZqq22AQxFiuLBHn3++CaSTV17ZhdW+RdtqH9oXsA9CDAfTq6h7r79+Loz0+OH168OvH388nN2+PTz+8cfhyenpdoth89+q03Nqo7bZPrRvYA5CDHs7/S189JbwXOh88MHw+Pvvty32p221jxho6kN9AWMIMcx2dvfucP/atV3I3L96dXj02WfbZ5ejfWrfu35+61N9AxlCDLPoFZFD5d6VK8Ovn366feZ41If6cr+8KkOGEMOkX27c2AWJPsOKn3Edm/pSn+5fYwEiQgyj9C+GDhB9EH9Z1LfHoTEBRoihygGme7vObt3a1l4ejcH3nBFkMEIMKb+F3ATY7dvb2sunsTjIeGsJIcTwB/FD/GfhFVhJY/L4+LAfhBjO0a0MDojL/AxsSvyMjNsv+kaI4RzfB6Z/EXzW+V8tNWb0ixDDjt9G6t6sp3kbxaE0Rt9HxtvKfhFi2PFXiZ7GjaxL0Vg1Zo0dfSLEsKEvXG/eml29uq2Z78mDB7//+sSjR9uawz2+e3fv72D6K0p8abxPhBg2/MXrfb8L+eThw+Hhe+/9HiI3b14oyM7u3Pn998ZefXU4+/bbbe00jVn9aw7oDyGGzauoQ0Pg8XffbbZ1OTTIHGDn9rOHXQjze2TdIcSwuzNfP4VzCIfguQDaI8jKAPvl/fc3r/D2obFrW+7k7w8hht0vsl7k98AODbIlAkw0dm2vuaAvhFjn9Pv2uviX+Dxp3yBbKsDMbyn5zf6+EGKd879KLnVz69wgWzrAxDe/8q+UfSHEOufPw5b8itFUkB0jwMRfReJzsb4QYp3Tn07Thb/0L1XUguxYASaag/apOaEfhFjnfJe+/gLR0sog0/1kJy++uHu8ZICJ5qD9cvd+XwixzvlV0bG+K1kGmcvSASaag/atOaEfhFjnHCrHdPrhh7t+VO6/+ebw5ORk++yynsZ88GwhxDp37Iu+/AzMZe59ZPvy/tEPQqxzx3w7WQbYg7ff3v23ytJBxtvJPhFinTvWB/u1f4Wcex/ZIfhgv0+EWOeOcYvF1G0UxwoybrHoEyHWuaVvdp17H9gxgoybXftEiHVuya8dzQ0wWzrI+NpRnwixzi31BfB9A8yWDDK+AN4nQgwX/imeQwPMlggyfoqnX4QYdp+LHfKjiI9/+GE4efnlXQDtG2BWBtmvn3yyfWYefhSxX4QYdgFyyFvKJ/fuDQ/eemuz/aEBZjHIzr78cls7j99Kah/oCyGGjV0I7PmHQuTJTz9tXjldJMDs7IsvhrOvvto+moc/FNI3Qgwb/lfKQ/5k22XjT7b1jRDDju/e54/noiWEGHZOtzeL3rty5Wg/zbMkjVFj3bwKW/CXadEWQgzn3L92bRMKS/3m/jH55laNGf0ixHDO2d27m2BQWfJ395fmrxipaMzoFyGGP/Dbyk1A3Lq1rX12aEweH28jQYgh9cuNG5uQ0J34S/8RkYvQWPztAI0RIMRQ5Tv5N0H2DLwi0xgcYNyZDyPEMMpBpnKZn5HFz8AIMESEGCb5reUmQK5ff6q3X6gv/yukCm8hUSLEMEv8sF/3Zj2NG2LVh+8DU+FDfGQIMcymWxl8H5mKvu5zyHctp2if/irRpp/f+uQ2CtQQYtibXhH5K0oq+uK1fgrn0N8jE22rffiL6Crqg1dfmEKI4WD6wnUMHQeaPsPSB/G6HUJ/gSh+hqb/Vp2eUxu1zfbBl7kxFyGGC9NveOlfDP0LsYcUbat98Htg2BchhkXp9+31KkqBpD+dpreE8aer9d+q03Nqo7b8Jj4ughAD0DRCDEDTCDEATSPEADSNEAPQNEIMQNMIMQBNI8QANI0QA9A0QgxA0wgxAE0jxAA0jRAD0DRCDEDTCDEATSPEADSNEAPQNEIMQNMIMQBNI8QANI0QA9A0QgxA0w4Oseeff3547rnnNv+LP2J9IK+99trmPFCxmzdv7ur03/saO7feeeed4c6dO9tHy9D+PF7t/5gOWRtC7EhYH8jTDDHXE2IzcZGOY30gWYgdg8LF/RBiM2UXaXnA3CbWleKgVfQ4OyB+rD5iP3FR43Zum4ltXGrKOcxd2Gx9rBynSiaePC7Z/sbM7aucp0qca3kil/v1cYrHphzr3H2UynNkrG3ZTmWubK1UV1OuWXa+xfWwOJ/yfIprVGvjfr2+sY9Y4hpNPR/FNuojjilbj9i+1kbKdiqlsbWpOVqIZSW2lTjgWvFCZ8+p+HmPJysWD0ZW4kEda5udrKVsfWRsnPGgTa3NHGN9xblmz7v4hJxaO5Wsvzj/OfsoT9yxcypeLFP7jvPNjPVTHu+pvqK4X4vHNs5X83F9WeJcvc5e29rYNc6psZbrnbWJJY5j7Bzd57jHYxPbxvoxRwuxWO+25cBcp2Llwrh9rCsXPh78bP9e+OyEEtfFkzWbXxzb1AJn28dxZielimXbq89s+0zsy+sVx++51uZUtot9x7axn1gf19p15T48rlgf55uNV7J9x7rIdXH7Uuw/rmucm/uReLxcH/dRG6vFeWVrELd3nYpl50ZtrLHeYl9xvnGsHpe4rmwf6y3OzW2zNRDXxfnGscV5jDlaiMUBZActq7NsP36sUvJY4mKID6DHGPdb9hnFhSzbua94MDPZ+mR1Evvzft1WZe7BjGp96fHY2ONxidvHMcZ1ju1r9V7D2j7Ex0rF843Hq+R67ye2LY/ZlDiucr1KsW25jnPnkK1Ntq2oPjuGahfra9uXYjuVeByyOonj1fZlXbne5Zz3PTZx2zmO+pmYZRMeW/TsOT8uD6j4ubEi5QF0GTtotVJuUyrXR/Pwtj4RonK/cS1jybbNuP3UOGVsvlPjr9Vnx3xsDeJzbu/H2RzK9dX+3D6WOfOXbFsVjSuK/ZTPZXOOx9Hmtqsp5y5j46qtjYrXZ+6x8XNj4y3HUuu/dmw0rzi3Kc2FWDZxPzdWvJ84xrL4AMXx1srUIpfrk50IUbaersuK17HG7WonipVzdfu544/1cUxxv66vtZVs/36czSEeR5tzbGti/1kx7cd12ibK5pCNM1ubrF1Ndq7UxhXrVTwuP/baZmO3ufOyqfmVpexP84pzm7KqEMueq4ljiqV8zuPdV7k+YyeJ+LlsDnE9XKYOsttNrYnHqRLNHX+sj2uVreHYGmT78eNsDuX4oth3LHPFNXHxeOOx0JijbM4au+tsbruabO61cbmuXCfXe23nHhs/NzbeuWsUS6R9e1xzXFqIZXXmfat4Efw4m1w2ln2Uiz52QOfKxlQb5z79jZ08Ua0vbT9nTO7D9bUxxvp4HLPjG9uWxzE78cfm6vrsfIiy/e6j7Ke2DjJ3Dtna1MbptrEuO2a17V0X1ynOIdZndRLH6zlnc7BszpnamPd1aSEmrovt48RUPDk/LhdY4jZeZHGdx+gxq0TZuGNbjyE7mDXZ+tTGmY3Lj+P2ku03k/UVT15vH/v2PON6uF3cNo491sdjmx3z2LZWH+cV9xGPexyfxxznEWXHthT7qc2tdrzcf2xbG6tNrU1cg6wv18V22T7FdSoW91kba20fcR1ivcVxuG3sL5q7NlMuNcRifSxx0j5wfhwXPYrblCU70bJSO4HLEudck62PjI1zztq4xLY1c/qa6sfjj+tRW6fa+F0/tf4qcR8Sz6myzD1eKrFtZqwflWiqr2ifC1VjdH1Z4nmfnVvZmFQ3tk+V8nrK2sQS1zHOoyxTY4ults/yXKi51BCTciHKhddj8eNy0aPYv0umbKPifkplu7H+o2x9rJyzSqZ28PeRncTlXMs2Gl8co9rHscSTLtbHYxu3d325j7LfclwWt5tqW7Yba1vK1mqf8y1rG9tYtjaWzTWut9TOrXL83nc5TvUR25ZiW/URx1SORTyesTYS27iUx2ZsbWoODrFjGltgtGvqYgAOcWkhVv4/TuS67FUM2kWI4Rgu9ZVY+TK0LHNfTqINhBiO4dLfTpbv113K98poHyGGY3gmPxMDgLkIMQBNI8QANI0QA9A0QgxA0wgxAE0jxAA0jRAD0DRCDEDTCDEATSPEADSNEAPQNEIMQNMIMQBNI8QANI0QA9A0QgxA0wgxAE0jxAA0jRAD0DRCDEDTCDEATSPEADSNEOvU9z8/Gv72r2+Gv1z5fPjzyormpLlpjlg/QqxTusizAFhT0RyxfoRYp9b4CqwsmiPWjxDrVHbRr7Fg/QixTmUX/BoL1o8Q61R2wa+xYP0IsU5lF/waC9aPEOtUdsGvsWD9CLFOZRf8GgvWjxDrVHbBr7Fg/QixTmUX/JLlm/+dbnsahv98ebKr/+vbdzbPxbZlmyUL1o8Q61R2wS9VFFL//O+Pu8cKKIdUGWLy93/f3T1eumD9CLFOZRf8EiV7paXiPuPzcswAU8H6EWKdyi74JYpCKXtrqOBSgDnEJAu7pQvWjxDrVHbBL1HmhJg4zOLbzmMUrB8h1qnsgl+iOJzKevcZn3eg8ZkYLoIQ61R2wS9VyldYYx/sK8COOR6sHyHWqeyCX7IoqCy+vcxeqen5sm6pgvUjxDqVXfBrLFg/QqxT2QW/xoL1I8Q6lV3wayxYP0KsU9kFv8aC9SPEOpVd8GssWD9CrFPZBb/GgvUjxDqVXfBrLFg/QqxT/Mk2rAUh1in+eC7WghDrlP7Evy7yNb4i05w0N80R60eIAWgaIQagaYQYgKYRYgCaRogBaBohBqBphBiAphFiAJpGiAFoGiEGoGmEGICmEWIAmkaIAWgaIQagYcPwfxG+Znr3e4KcAAAAAElFTkSuQmCC" />
                                     </ui:ImageFound.Image>
@@ -1365,7 +1406,7 @@
                                       </ui:Target>
                                     </ui:ImageFound.Target>
                                   </ui:ImageFound>
-                                  <If Condition="[errorlog1]" DisplayName="If de error locatario2" sap:VirtualizedContainerService.HintSize="497,1182" sap2010:WorkflowViewState.IdRef="If_37">
+                                  <If Condition="[errorlog1]" DisplayName="If de error locatario2" sap:VirtualizedContainerService.HintSize="1124,1183" sap2010:WorkflowViewState.IdRef="If_37">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2579,7 +2620,7 @@
                                 </Sequence>
                               </If.Then>
                               <If.Else>
-                                <Sequence sap:VirtualizedContainerService.HintSize="1113,8356" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                                <Sequence sap:VirtualizedContainerService.HintSize="1298,12403" sap2010:WorkflowViewState.IdRef="Sequence_53">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="x:Boolean" Name="locatariolog1" />
                                   </Sequence.Variables>
@@ -2589,7 +2630,7 @@
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="1071,134" sap2010:WorkflowViewState.IdRef="SetValue_56" Text="[ncontrato.ToString]">
+                                  <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="1256,134" sap2010:WorkflowViewState.IdRef="SetValue_56" Text="[ncontrato.ToString]">
                                     <ui:SetValue.Target>
                                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="95ea750f-dcf3-457d-b069-5be3af10d1ae" InformativeScreenshot="2a19e4c2b06515ddb7d5cde1a8ae2126" Selector="&lt;webctrl name='numero_contrato_definitivo_copia' tag='INPUT' type='number' /&gt;">
                                         <ui:Target.TimeoutMS>
@@ -2601,7 +2642,7 @@
                                       </ui:Target>
                                     </ui:SetValue.Target>
                                   </ui:SetValue>
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="1071,106" sap2010:WorkflowViewState.IdRef="Click_82" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="1256,106" sap2010:WorkflowViewState.IdRef="Click_82" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -2629,7 +2670,7 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </ui:Click>
-                                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="1071,134" sap2010:WorkflowViewState.IdRef="TypeInto_62" Text="[lineaLeasing+ &quot;[k(down)][k(enter)]&quot;]">
+                                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="1256,134" sap2010:WorkflowViewState.IdRef="TypeInto_62" Text="[lineaLeasing+ &quot;[k(down)][k(enter)]&quot;]">
                                     <ui:TypeInto.Target>
                                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5750db1d-028b-4407-b3fb-28425ba86e39" InformativeScreenshot="a3f6743a69ab62eaee3ca08893369aaa" Selector="&lt;webctrl name='linea_leasing' tag='INPUT' type='text' /&gt;">
                                         <ui:Target.TimeoutMS>
@@ -2641,8 +2682,8 @@
                                       </ui:Target>
                                     </ui:TypeInto.Target>
                                   </ui:TypeInto>
-                                  <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="1071,22" sap2010:WorkflowViewState.IdRef="Delay_52" />
-                                  <Assign sap:VirtualizedContainerService.HintSize="1071,60" sap2010:WorkflowViewState.IdRef="Assign_24">
+                                  <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="1256,22" sap2010:WorkflowViewState.IdRef="Delay_52" />
+                                  <Assign sap:VirtualizedContainerService.HintSize="1256,60" sap2010:WorkflowViewState.IdRef="Assign_24">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[inicioContrato]</OutArgument>
                                     </Assign.To>
@@ -2650,7 +2691,7 @@
                                       <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(fechaIniCon.ToString,"yyyy-mm-dd",System.Globalization.CultureInfo.InvariantCulture).ToString("dd/mm/yyyy")]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  fecha_inicio'" sap:VirtualizedContainerService.HintSize="1071,134" sap2010:WorkflowViewState.IdRef="TypeInto_63" Text="[inicioContrato.Replace(&quot;/&quot;,string.Empty)]">
+                                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  fecha_inicio'" sap:VirtualizedContainerService.HintSize="1256,134" sap2010:WorkflowViewState.IdRef="TypeInto_63" Text="[inicioContrato.Replace(&quot;/&quot;,string.Empty)]">
                                     <ui:TypeInto.Target>
                                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3ba67285-928b-431f-8597-4c512df9299b" InformativeScreenshot="6af6d574ce573e46530b4ab5f262e47e" Selector="&lt;webctrl tag='INPUT' type='date' /&gt;">
                                         <ui:Target.TimeoutMS>
@@ -2662,7 +2703,7 @@
                                       </ui:Target>
                                     </ui:TypeInto.Target>
                                   </ui:TypeInto>
-                                  <Assign sap:VirtualizedContainerService.HintSize="1071,60" sap2010:WorkflowViewState.IdRef="Assign_25">
+                                  <Assign sap:VirtualizedContainerService.HintSize="1256,60" sap2010:WorkflowViewState.IdRef="Assign_25">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[finContrato]</OutArgument>
                                     </Assign.To>
@@ -2670,7 +2711,7 @@
                                       <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(fechaFinCon,"yyyy-mm-dd",System.Globalization.CultureInfo.InvariantCulture).ToString("dd/mm/yyyy")]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  fecha_fin'" sap:VirtualizedContainerService.HintSize="1071,134" sap2010:WorkflowViewState.IdRef="TypeInto_64" Text="[finContrato.Replace(&quot;/&quot;,string.Empty)]">
+                                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  fecha_fin'" sap:VirtualizedContainerService.HintSize="1256,134" sap2010:WorkflowViewState.IdRef="TypeInto_64" Text="[finContrato.Replace(&quot;/&quot;,string.Empty)]">
                                     <ui:TypeInto.Target>
                                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4ab4a2cf-26de-489d-afa0-9c9605a40c35" InformativeScreenshot="b268aabeb6804dd7721eefeb98ed3868" Selector="&lt;webctrl id='fecha_fin' tag='INPUT' type='date' /&gt;">
                                         <ui:Target.TimeoutMS>
@@ -2682,7 +2723,7 @@
                                       </ui:Target>
                                     </ui:TypeInto.Target>
                                   </ui:TypeInto>
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="1071,106" sap2010:WorkflowViewState.IdRef="Click_83" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="1256,106" sap2010:WorkflowViewState.IdRef="Click_83" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -2704,8 +2745,8 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
-                                  <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="1071,22" sap2010:WorkflowViewState.IdRef="Delay_53" />
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  focus'" sap:VirtualizedContainerService.HintSize="1071,106" sap2010:WorkflowViewState.IdRef="Click_84" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="1256,22" sap2010:WorkflowViewState.IdRef="Delay_53" />
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  focus'" sap:VirtualizedContainerService.HintSize="1256,106" sap2010:WorkflowViewState.IdRef="Click_84" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -2727,9 +2768,9 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
-                                  <Switch x:TypeArguments="x:String" DisplayName="Switch tipo de documento" Expression="[tipoDocumento]" sap:VirtualizedContainerService.HintSize="1071,52" sap2010:WorkflowViewState.IdRef="Switch`1_7">
+                                  <Switch x:TypeArguments="x:String" DisplayName="Switch tipo de documento" Expression="[tipoDocumento]" sap:VirtualizedContainerService.HintSize="1256,2849" sap2010:WorkflowViewState.IdRef="Switch`1_7">
                                     <Switch.Default>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="705,1759" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                                      <Sequence sap:VirtualizedContainerService.HintSize="1218,2666" sap2010:WorkflowViewState.IdRef="Sequence_45">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="x:String" Name="segundoNombre">
                                             <Variable.Default>
@@ -2751,7 +2792,7 @@
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Segundo Nombre" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="663,51" sap2010:WorkflowViewState.IdRef="GetRowItem_46" Row="[dato]">
+                                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Segundo Nombre" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1176,188" sap2010:WorkflowViewState.IdRef="GetRowItem_46" Row="[dato]">
                                           <ui:GetRowItem.Value>
                                             <OutArgument x:TypeArguments="x:String">[segundoNombre]</OutArgument>
                                           </ui:GetRowItem.Value>
@@ -2762,7 +2803,7 @@
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </ui:GetRowItem>
-                                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Segundo Apellido" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="663,51" sap2010:WorkflowViewState.IdRef="GetRowItem_47" Row="[dato]">
+                                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Segundo Apellido" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1176,188" sap2010:WorkflowViewState.IdRef="GetRowItem_47" Row="[dato]">
                                           <ui:GetRowItem.Value>
                                             <OutArgument x:TypeArguments="x:String">[segundoApellido]</OutArgument>
                                           </ui:GetRowItem.Value>
@@ -2773,7 +2814,7 @@
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </ui:GetRowItem>
-                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  focus'" sap:VirtualizedContainerService.HintSize="663,134" sap2010:WorkflowViewState.IdRef="TypeInto_68" Text="[tipoDocumento+ &quot;[k(up)][k(enter)]&quot;]">
+                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  focus'" sap:VirtualizedContainerService.HintSize="1176,134" sap2010:WorkflowViewState.IdRef="TypeInto_68" Text="[tipoDocumento+ &quot;[k(up)][k(enter)]&quot;]">
                                           <ui:TypeInto.Target>
                                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="38257db5-fb3d-4f4c-90f4-cefb4b1d22ac" InformativeScreenshot="34c42bcec4fd597a15160fd0e0743e94" Selector="&lt;webctrl id='focus' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
@@ -2825,7 +2866,7 @@
                                             </ui:Target>
                                           </ui:ImageFound.Target>
                                         </ui:ImageFound>
-                                        <If Condition="[locatarioYa1]" sap:VirtualizedContainerService.HintSize="663,755" sap2010:WorkflowViewState.IdRef="If_32">
+                                        <If Condition="[locatarioYa1]" sap:VirtualizedContainerService.HintSize="1176,1388" sap2010:WorkflowViewState.IdRef="If_32">
                                           <If.Then>
                                             <Sequence sap:VirtualizedContainerService.HintSize="376,260" sap2010:WorkflowViewState.IdRef="Sequence_43">
                                               <sap:WorkflowViewStateService.ViewState>
@@ -2859,13 +2900,13 @@
                                             </Sequence>
                                           </If.Then>
                                           <If.Else>
-                                            <Sequence sap:VirtualizedContainerService.HintSize="242,598" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                                            <Sequence sap:VirtualizedContainerService.HintSize="755,1228" sap2010:WorkflowViewState.IdRef="Sequence_44">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TypeInto_69" Text="[primerNombre]">
+                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="713,134" sap2010:WorkflowViewState.IdRef="TypeInto_69" Text="[primerNombre]">
                                                 <ui:TypeInto.Target>
                                                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="81f04a2d-9f8d-44d4-86ed-c10714c6f8ef" InformativeScreenshot="2cab160f54b6340abaa6768ed99ea7f2" Selector="&lt;webctrl name='primer_nombre1' tag='INPUT' type='text' /&gt;">
                                                     <ui:Target.TimeoutMS>
@@ -2883,7 +2924,7 @@
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
                                               </ui:TypeInto>
-                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TypeInto_70" Text="[segundoNombre]">
+                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="713,134" sap2010:WorkflowViewState.IdRef="TypeInto_70" Text="[segundoNombre]">
                                                 <ui:TypeInto.Target>
                                                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="04b54d6b-6aa6-452f-b767-5d2d08d2bb73" InformativeScreenshot="643727de24f0539dea4f0aacde03a5f4" Selector="&lt;webctrl name='segundo_nombre1' tag='INPUT' type='text' /&gt;">
                                                     <ui:Target.TimeoutMS>
@@ -2901,7 +2942,7 @@
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
                                               </ui:TypeInto>
-                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TypeInto_71" Text="[primerApellido]">
+                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="713,134" sap2010:WorkflowViewState.IdRef="TypeInto_71" Text="[primerApellido]">
                                                 <ui:TypeInto.Target>
                                                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ca05c983-ed33-4424-b840-6426569a1929" InformativeScreenshot="6a55fd890f2298ecb1211e4ebcc72802" Selector="&lt;webctrl name='primer_apellido1' tag='INPUT' type='text' /&gt;">
                                                     <ui:Target.TimeoutMS>
@@ -2919,7 +2960,7 @@
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
                                               </ui:TypeInto>
-                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TypeInto_72" Text="[segundoApellido]">
+                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="713,134" sap2010:WorkflowViewState.IdRef="TypeInto_72" Text="[segundoApellido]">
                                                 <ui:TypeInto.Target>
                                                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a7fd50ff-e3d5-441c-ab32-283c1dbf1425" InformativeScreenshot="68f7782e65039c134a25dfb15328dfcf" Selector="&lt;webctrl name='segundo_apellido1' tag='INPUT' type='text' /&gt;">
                                                     <ui:Target.TimeoutMS>
@@ -2937,7 +2978,7 @@
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
                                               </ui:TypeInto>
-                                              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_88" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="713,106" sap2010:WorkflowViewState.IdRef="Click_88" KeyModifiers="None" MouseButton="BTN_LEFT">
                                                 <ui:Click.CursorPosition>
                                                   <ui:CursorPosition Position="Center">
                                                     <ui:CursorPosition.OffsetX>
@@ -2965,7 +3006,7 @@
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
                                               </ui:Click>
-                                              <If Condition="[ciudad.Equals(&quot;Bogota D.C.&quot;)]" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_31">
+                                              <If Condition="[ciudad.Equals(&quot;Bogota D.C.&quot;)]" sap:VirtualizedContainerService.HintSize="713,294" sap2010:WorkflowViewState.IdRef="If_31">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -3207,7 +3248,7 @@
                                       </If>
                                     </Sequence>
                                   </Switch>
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="1071,106" sap2010:WorkflowViewState.IdRef="Click_89" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="1256,106" sap2010:WorkflowViewState.IdRef="Click_89" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -3229,7 +3270,7 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
-                                  <ui:ImageFound DisplayName="Image Exists 'firefox.exe SIGEST'" Found="[locatariolog1]" sap:VirtualizedContainerService.HintSize="1071,106" sap2010:WorkflowViewState.IdRef="ImageFound_19">
+                                  <ui:ImageFound DisplayName="Image Exists 'firefox.exe SIGEST'" Found="[locatariolog1]" sap:VirtualizedContainerService.HintSize="1256,106" sap2010:WorkflowViewState.IdRef="ImageFound_19">
                                     <ui:ImageFound.Image>
                                       <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
                                     </ui:ImageFound.Image>
@@ -3244,7 +3285,7 @@
                                       </ui:Target>
                                     </ui:ImageFound.Target>
                                   </ui:ImageFound>
-                                  <If Condition="[locatariolog1]" DisplayName="If error agregar locatario" sap:VirtualizedContainerService.HintSize="1071,52" sap2010:WorkflowViewState.IdRef="If_38">
+                                  <If Condition="[locatariolog1]" DisplayName="If error agregar locatario" sap:VirtualizedContainerService.HintSize="1256,1567" sap2010:WorkflowViewState.IdRef="If_38">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -3320,8 +3361,8 @@
                                       </Sequence>
                                     </If.Then>
                                   </If>
-                                  <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="1071,22" sap2010:WorkflowViewState.IdRef="Delay_58" />
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="1071,106" sap2010:WorkflowViewState.IdRef="Click_90" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="1256,22" sap2010:WorkflowViewState.IdRef="Delay_58" />
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="1256,106" sap2010:WorkflowViewState.IdRef="Click_90" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -3343,8 +3384,8 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
-                                  <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="1071,22" sap2010:WorkflowViewState.IdRef="Delay_59" />
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SELECT  tipo_bien'" sap:VirtualizedContainerService.HintSize="1071,106" sap2010:WorkflowViewState.IdRef="Click_136" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="1256,22" sap2010:WorkflowViewState.IdRef="Delay_59" />
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SELECT  tipo_bien'" sap:VirtualizedContainerService.HintSize="1256,106" sap2010:WorkflowViewState.IdRef="Click_136" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -3366,21 +3407,21 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
-                                  <Switch x:TypeArguments="x:String" DisplayName="Switch tipo Bien" Expression="[tipoBien]" sap:VirtualizedContainerService.HintSize="1071,5914" sap2010:WorkflowViewState.IdRef="Switch`1_8">
+                                  <Switch x:TypeArguments="x:String" DisplayName="Switch tipo Bien" Expression="[tipoBien]" sap:VirtualizedContainerService.HintSize="1256,5649" sap2010:WorkflowViewState.IdRef="Switch`1_8">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <Sequence x:Key="Vehiculo" sap:VirtualizedContainerService.HintSize="1031,5659" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                                    <Sequence x:Key="Vehiculo" sap:VirtualizedContainerService.HintSize="881,5289" sap2010:WorkflowViewState.IdRef="Sequence_46">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="989,5567" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                                      <Sequence sap:VirtualizedContainerService.HintSize="839,5197" sap2010:WorkflowViewState.IdRef="Sequence_69">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="x:String" Name="tipoServicioEsp" />
                                           <Variable x:TypeArguments="x:String" Name="claseVehiculoEsp" />
@@ -3394,7 +3435,7 @@
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'firefox.exe'" sap:VirtualizedContainerService.HintSize="947,155" sap2010:WorkflowViewState.IdRef="ClickImage_41" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'firefox.exe'" sap:VirtualizedContainerService.HintSize="797,155" sap2010:WorkflowViewState.IdRef="ClickImage_41" KeyModifiers="None" MouseButton="BTN_LEFT">
                                           <ui:ClickImage.CursorPosition>
                                             <ui:CursorPosition Position="Center">
                                               <ui:CursorPosition.OffsetX>
@@ -3419,7 +3460,7 @@
                                             </ui:Target>
                                           </ui:ClickImage.Target>
                                         </ui:ClickImage>
-                                        <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="947,134" sap2010:WorkflowViewState.IdRef="SetValue_69" Text="[placa]">
+                                        <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="SetValue_69" Text="[placa]">
                                           <ui:SetValue.Target>
                                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="60bccb13-12e6-4429-afe5-f7e85d04b852" InformativeScreenshot="d0cf4093f2d9e6a831a87c156ffa7955" Selector="&lt;webctrl name='placa_vehiculo1' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
@@ -3431,8 +3472,8 @@
                                             </ui:Target>
                                           </ui:SetValue.Target>
                                         </ui:SetValue>
-                                        <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="947,22" sap2010:WorkflowViewState.IdRef="Delay_72" />
-                                        <ui:ImageFound DisplayName="Image Exists 'firefox.exe SIGEST'" Found="[vehiculoCreado]" sap:VirtualizedContainerService.HintSize="947,106" sap2010:WorkflowViewState.IdRef="ImageFound_20">
+                                        <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="797,22" sap2010:WorkflowViewState.IdRef="Delay_72" />
+                                        <ui:ImageFound DisplayName="Image Exists 'firefox.exe SIGEST'" Found="[vehiculoCreado]" sap:VirtualizedContainerService.HintSize="797,106" sap2010:WorkflowViewState.IdRef="ImageFound_20">
                                           <ui:ImageFound.Image>
                                             <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAjCAYAAADc6ffdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAT/SURBVGhD7ZmJb1VFFIf924yJwaBsKZuAskgECmKiEgMIGoMSghQjwYgJJoIpgbZ0E0tbthZRKDSkQJVCaksJW2wIDRGCZuCbN2c4d97c93pbG2tyv+Sms7yZOfO7Z2bunL5gckZNLlYG/jWxmhbMd6l0equrzY2OUy43Nrq/3m36W1pcbnyMxmaNF+vIsiXmXk+PyyWhbmRoyOXilBr4nydPTFfVDvN7zSFXMnYmhVh99YfN6Y83u9xzEPDYu2tdLp2sA4+VSSEWb7922qvm8cgDV1IAj7hx6qRN3zp31jTMqTCHZ820f//s7bXlwMD8rn52hambMc00L1poHt6962qThjHWL59tsb/jaV+7xvz96JGti01Al4Vi9Xy31/aBTYz5YHDA1SShnHoZE1tDmzo3feTrsS8ksWchDIMLdND8xkKbZhmS/mt42OYRovH1eV5cBu7YsN62ASbUunKFTYM27OdPPzEXdn3lcsZcb24yV2trbDqLWJf3fW9OfrjOj3nvUo+pmznd5wXylFMveWytmfqKzQM2/Xag2uWMte/inm9crkBCLATBMwSWpohHQyalYQ+SfYgJDff12bTA2xb0hPUYIVnE4uWFK+Hs9m1Fy3Sgvc2Wa2h34KUXXS4+7k/LlrpUgYRYwP4ky65l+VveGN4gnYcPxkO5SUoaQWO/Fcr1o8Vi/BDqxCaBfFgG2qZwXvJoisRCKARjY9cbfsyzNOUmqdPlPEsvI16WbqvFmmjPCikSC5hM2+rKxKcEexXrXm/a1xrq/cRig+kynQ73LCZ3vanRpnlBeu/o2lmVKhZbwFj3LNrpPQsxtU3MU1aYEBWLfYpvqxAG40RhL+LRh0EWsTA2PA3l4OAvecoZA29OEwvkNOTJchoOHGsvsqmr6gs/7o+L30w4BkTFyomTi5WBXKwM5GJlIBcrA7lYGcjFysCEisW3y/kvdz77xhl0JZOH2HdhOcYt1pUf9puHt2+73HMIufBxKV/Nk43/RCyuDWG04f/AuMWSKwGf+3z267sR9zC5CtjrwrPLaWvlSnNwysu+/H5/v116XEnI89RXzEoECTWxa48OAnIloY/BE8dtGf3q39IeaEPgTmxjDnJ9AoKW2EG9BC21WFxruN5I34wTw4vFwA1zZ/u7FQYcWbrYeg03dC7X2riRm4WYfMyz/mg96lLG3Om+YEM9McoFAQnQCQT6ft36ucsVfiv12HfzzBmbBl4sfQMxOh0AwPa2ylVeLOYUu2QzXogXC0/RhgMT5TaOMY3z5hRdLGE0yzAtJFMuVKP7JRwjL0tof2d1UYgGKJMIL6ElCVAKzEvESgvfaM8TvFi4Xhj44kEMwJVxVVy5c9NG7+YxseT2rvsJoU3MICGs033ph36sN6z7wNS+NtWXS3vsC+NbIPXMO7bsSooV86w0WGYSXw/FGjrdaU68/57LFUgTpZxnaWKeJbBkQtul/YR4Foaw1PRRzwaLB9H4Tne3KzV2g5R9iH1DDgL6QKyOjRtsHnirvOkYpYKAobFhoI+9RyK3iHXx2z02DXiKtI/tWbxoqQ/nTZ5xSu5ZQIdH315ulxDLjZOKxgiGm0u5/jcYf3F/yq/W1doyOeEo4z9GsbcE9J0WBIy14T/a0m/j/LmJCeqAIcLq9uFpSDtdr09D5qKXZfOiBf6jOiFWTmlysTKQi5WBXKwM5GJlIBdr1BjzFI40jABS9kD/AAAAAElFTkSuQmCC" />
                                           </ui:ImageFound.Image>
@@ -3447,7 +3488,7 @@
                                             </ui:Target>
                                           </ui:ImageFound.Target>
                                         </ui:ImageFound>
-                                        <If Condition="[vehiculoCreado]" DisplayName="If vehiculo creado 1" sap:VirtualizedContainerService.HintSize="947,2819" sap2010:WorkflowViewState.IdRef="If_39">
+                                        <If Condition="[vehiculoCreado]" DisplayName="If vehiculo creado 1" sap:VirtualizedContainerService.HintSize="797,2449" sap2010:WorkflowViewState.IdRef="If_39">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3495,13 +3536,13 @@
                                             </Sequence>
                                           </If.Then>
                                           <If.Else>
-                                            <Sequence sap:VirtualizedContainerService.HintSize="526,2660" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                                            <Sequence sap:VirtualizedContainerService.HintSize="376,2289" sap2010:WorkflowViewState.IdRef="Sequence_70">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="SetValue_72" Text="[ndocumento.ToString]">
+                                              <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SetValue_72" Text="[ndocumento.ToString]">
                                                 <ui:SetValue.Target>
                                                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6a1d9712-755a-42ca-9ff1-11d8a33e77f8" InformativeScreenshot="c6fdaf7bd31d3ef7d552fb3a4eae3154" Selector="&lt;webctrl name='numero_plaqueta_vehiculo1' tag='INPUT' type='number' /&gt;">
                                                     <ui:Target.TimeoutMS>
@@ -3513,7 +3554,7 @@
                                                   </ui:Target>
                                                 </ui:SetValue.Target>
                                               </ui:SetValue>
-                                              <Assign sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_38">
+                                              <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_38">
                                                 <Assign.To>
                                                   <OutArgument x:TypeArguments="x:String">[claseVehiculoEsp]</OutArgument>
                                                 </Assign.To>
@@ -3521,7 +3562,7 @@
                                                   <InArgument x:TypeArguments="x:String">[claseVehiculo.Replace(" ",string.Empty)]</InArgument>
                                                 </Assign.Value>
                                               </Assign>
-                                              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_117" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_117" KeyModifiers="None" MouseButton="BTN_LEFT">
                                                 <ui:Click.CursorPosition>
                                                   <ui:CursorPosition Position="Center">
                                                     <ui:CursorPosition.OffsetX>
@@ -3543,7 +3584,7 @@
                                                   </ui:Target>
                                                 </ui:Click.Target>
                                               </ui:Click>
-                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_95" Text="[claseVehiculoEsp+ &quot;[k(down)][k(enter)]&quot;]">
+                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_95" Text="[claseVehiculoEsp+ &quot;[k(down)][k(enter)]&quot;]">
                                                 <ui:TypeInto.Target>
                                                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="50e688b3-c7c2-4898-b692-1b0640465a84" InformativeScreenshot="29612e0c6e5afa5e2f5b9fbf20513327" Selector="&lt;webctrl name='clase_vehiculo1' tag='INPUT' type='text' /&gt;">
                                                     <ui:Target.TimeoutMS>
@@ -3555,7 +3596,7 @@
                                                   </ui:Target>
                                                 </ui:TypeInto.Target>
                                               </ui:TypeInto>
-                                              <Assign sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_39">
+                                              <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_39">
                                                 <Assign.To>
                                                   <OutArgument x:TypeArguments="x:String">[autoridadTransitoEsp]</OutArgument>
                                                 </Assign.To>
@@ -3563,37 +3604,7 @@
                                                   <InArgument x:TypeArguments="x:String">[autoridadTransito.Remove(0,2)]</InArgument>
                                                 </Assign.Value>
                                               </Assign>
-                                              <If Condition="[autoridadTransito.Contains(&quot;BOGOTA&quot;)]" sap:VirtualizedContainerService.HintSize="484,432" sap2010:WorkflowViewState.IdRef="If_47">
-                                                <If.Then>
-                                                  <Sequence sap:VirtualizedContainerService.HintSize="304,252" sap2010:WorkflowViewState.IdRef="Sequence_88">
-                                                    <Sequence.Variables>
-                                                      <Variable x:TypeArguments="x:String" Name="autoridadTransitoBogota" />
-                                                    </Sequence.Variables>
-                                                    <sap:WorkflowViewStateService.ViewState>
-                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                      </scg:Dictionary>
-                                                    </sap:WorkflowViewStateService.ViewState>
-                                                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_59">
-                                                      <Assign.To>
-                                                        <OutArgument x:TypeArguments="x:String">[autoridadTransitoBogota]</OutArgument>
-                                                      </Assign.To>
-                                                      <Assign.Value>
-                                                        <InArgument x:TypeArguments="x:String">BOGOTA</InArgument>
-                                                      </Assign.Value>
-                                                    </Assign>
-                                                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_60">
-                                                      <Assign.To>
-                                                        <OutArgument x:TypeArguments="x:String">[autoridadTransito]</OutArgument>
-                                                      </Assign.To>
-                                                      <Assign.Value>
-                                                        <InArgument x:TypeArguments="x:String">[autoridadTransitoBogota]</InArgument>
-                                                      </Assign.Value>
-                                                    </Assign>
-                                                  </Sequence>
-                                                </If.Then>
-                                              </If>
-                                              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_118" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                              <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_118" KeyModifiers="None" MouseButton="BTN_LEFT">
                                                 <ui:Click.CursorPosition>
                                                   <ui:CursorPosition Position="Center">
                                                     <ui:CursorPosition.OffsetX>
@@ -3615,8 +3626,8 @@
                                                   </ui:Target>
                                                 </ui:Click.Target>
                                               </ui:Click>
-                                              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="484,22" sap2010:WorkflowViewState.IdRef="Delay_77" />
-                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_96" Text="[autoridadTransitoEsp + &quot;[k(down)][k(down)][k(enter)]&quot; + &quot;[k(right)]&quot; + &quot;[k(right)]&quot;]">
+                                              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_77" />
+                                              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_96" Text="[autoridadTransitoEsp + &quot;[k(down)][k(down)][k(enter)]&quot; + &quot;[k(right)]&quot; + &quot;[k(right)]&quot;]">
                                                 <ui:TypeInto.Target>
                                                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a15d79e7-223a-4ae5-842c-bd384e76bc21" InformativeScreenshot="d1a61ead31ad51f4d1c8adfc4ce531d6" Selector="&lt;webctrl name='organismo_transito_vehiculo1' tag='INPUT' type='text' /&gt;">
                                                     <ui:Target.TimeoutMS>
