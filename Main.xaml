@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1468,21430" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1468,21478" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="43">
       <x:String>System.Activities</x:String>
@@ -88,22 +88,23 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap:VirtualizedContainerService.HintSize="1478,21365" sap2010:WorkflowViewState.IdRef="Sequence_4">
+  <Sequence sap:VirtualizedContainerService.HintSize="1478,21413" sap2010:WorkflowViewState.IdRef="Sequence_4">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="placa" />
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="contador" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1436,21273" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://sigestqa.tessi.co:8002/login">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1436,21321" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://sigestqa.tessi.co:8002/login">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1402,21172" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1402,21220" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="usuario" />
               <Variable x:TypeArguments="x:String" Name="password" />
@@ -113,13 +114,13 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="1360,21080" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="C:\Users\PRUEBAS RPA\OneDrive\DOCUMENTOS ROBOTS\RPA-IBL\BD\MIGRACIÓN BANCOLOMBIA STOCK PRUEBA.xlsx">
+            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="1360,21128" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="C:\Users\PRUEBAS RPA\OneDrive\DOCUMENTOS ROBOTS\RPA-IBL\BD\MIGRACIÓN BANCOLOMBIA STOCK PRUEBA.xlsm">
               <ui:ExcelApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1326,20971" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1326,21019" sap2010:WorkflowViewState.IdRef="Sequence_2">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd:DataTable" Name="dtInformacion" />
                       <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="mensajeBorrar" />
@@ -225,7 +226,7 @@
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:GetOutlookMailMessages Account="{x:Null}" Filter="{x:Null}" FilterByMessageIds="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Outlook Mail Messages" GetAttachements="False" sap:VirtualizedContainerService.HintSize="412,22" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_1" MailFolder="Inbox" MarkAsRead="True" Messages="[mensajeBorrar]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Top="1" />
+                      <ui:GetOutlookMailMessages Account="{x:Null}" Filter="{x:Null}" FilterByMessageIds="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Outlook Mail Messages" GetAttachements="False" sap:VirtualizedContainerService.HintSize="412,22" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_1" MailFolder="Bandeja de entrada" MarkAsRead="True" Messages="[mensajeBorrar]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Top="1" />
                       <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="412,605" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[mensajeBorrar]">
                         <ui:ForEach.Body>
                           <ActivityAction x:TypeArguments="snm:MailMessage">
@@ -288,13 +289,13 @@
                         </ui:ForEach.Body>
                       </ui:ForEach>
                     </Sequence>
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtInformacion]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1284,19079" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtInformacion]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1284,19127" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="dato" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1250,18960" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1250,19008" sap2010:WorkflowViewState.IdRef="Sequence_1">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:Double" Name="ncontrato" />
                               <Variable x:TypeArguments="x:String" Name="fechaIniCon" />
@@ -317,7 +318,6 @@
                               <Variable x:TypeArguments="x:String" Name="primerApellido" />
                               <Variable x:TypeArguments="x:String" Name="concatenarCiudad" />
                               <Variable x:TypeArguments="x:Boolean" Name="locararioExiste" />
-                              <Variable x:TypeArguments="x:Int32" Default="1" Name="contador" />
                             </Sequence.Variables>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -622,8 +622,8 @@
                                 </Sequence>
                               </If.Then>
                             </If>
-                            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="1208,106" sap2010:WorkflowViewState.IdRef="Click_103" KeyModifiers="None" MouseButton="BTN_LEFT">
-                              <ui:Click.CursorPosition>
+                            <ui:ClickImage DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click Image 'firefox.exe SIGEST'" sap:VirtualizedContainerService.HintSize="1208,154" sap2010:WorkflowViewState.IdRef="ClickImage_43" KeyModifiers="None" MouseButton="BTN_LEFT">
+                              <ui:ClickImage.CursorPosition>
                                 <ui:CursorPosition Position="Center">
                                   <ui:CursorPosition.OffsetX>
                                     <InArgument x:TypeArguments="x:Int32" />
@@ -632,9 +632,12 @@
                                     <InArgument x:TypeArguments="x:Int32" />
                                   </ui:CursorPosition.OffsetY>
                                 </ui:CursorPosition>
-                              </ui:Click.CursorPosition>
-                              <ui:Click.Target>
-                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c3745e12-88e5-48ed-8b1a-d55c14161a08" InformativeScreenshot="7428ce4e05b0ce7f23e846dec214950b" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;header&amp;gt;a&amp;gt;img' tag='IMG' /&gt;">
+                              </ui:ClickImage.CursorPosition>
+                              <ui:ClickImage.Image>
+                                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                              </ui:ClickImage.Image>
+                              <ui:ClickImage.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="a5c8db35-7335-4171-b778-aa2b6ca61035">
                                   <ui:Target.TimeoutMS>
                                     <InArgument x:TypeArguments="x:Int32" />
                                   </ui:Target.TimeoutMS>
@@ -642,9 +645,9 @@
                                     <InArgument x:TypeArguments="ui:WaitForReady" />
                                   </ui:Target.WaitForReady>
                                 </ui:Target>
-                              </ui:Click.Target>
-                            </ui:Click>
-                            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="1208,22" sap2010:WorkflowViewState.IdRef="Delay_68" />
+                              </ui:ClickImage.Target>
+                            </ui:ClickImage>
+                            <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="1208,22" sap2010:WorkflowViewState.IdRef="Delay_68" />
                             <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="1208,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
                               <ui:Click.CursorPosition>
                                 <ui:CursorPosition Position="Center">
